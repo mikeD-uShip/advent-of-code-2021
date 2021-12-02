@@ -68,14 +68,14 @@
 
 
 module.exports = (inputs) => {
-  let count = 0
-  let lastDepth = Infinity
+  let count = 0;
+  let lastDepth = Infinity;
 
   for (const depth of inputs) {
     if (depth > lastDepth) {
-      count += 1
+      count += 1;
     }
-    lastDepth = depth
+    lastDepth = depth;
   }
 
   return count;
